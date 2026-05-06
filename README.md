@@ -116,7 +116,7 @@ python run.py
 
 ## 功能模块
 
-### 💬 法律问答（ChatView）
+###  法律问答（ChatView）
 
 标准 RAG 问答流程：
 1. 用户输入法律问题
@@ -126,16 +126,16 @@ python run.py
 5. 调用 LLM 生成回答
 6. 流式输出思维链和答案
 
-### 🤖 Agent 自主模式（AgentView）
+###  Agent 自主模式（AgentView）
 
 基于 Plan-Execute 循环的智能体，支持：
 
 | 模式 | 说明 |
 |------|------|
-| 💬 对话模式 | 自由提问，Agent 自主选择工具链 |
-| 📄 文件分析 | 上传文件后自动读取并分析内容 |
-| 📁 目录批处理 | 批量分析目录下所有文件，生成摘要报告 |
-| 📝 文书生成 | 填写标题和当事人信息，生成标准 Word 文书 |
+|     对话模式 | 自由提问，Agent 自主选择工具链 |
+|     文件分析 | 上传文件后自动读取并分析内容 |
+|   目录批处理 | 批量分析目录下所有文件，生成摘要报告 |
+|     文书生成 | 填写标题和当事人信息，生成标准 Word 文书 |
 
 **内置 7 个工具：**
 
@@ -151,26 +151,26 @@ python run.py
 
 **SSE 事件流：** `thinking` → `tool_call` → `tool_result` → `text` → `done`
 
-### 📚 知识库管理（KnowledgeView）
+###  知识库管理（KnowledgeView）
 
 - 目录批量入库：指定 `data/raw/` 目录，一键加载所有文档
 - 单文件上传：支持 PDF / Word / TXT 直接上传
 - 法律文本专项切割：章/节/条/款层级感知切块
 - 向量入库：自动嵌入 + 建立 BM25 索引
 
-### 📊 数据统计（AnalyticsView）
+###  数据统计（AnalyticsView）
 
 - 检索命中率分析
 - 知识库规模统计
 - 使用热度排行
 
-### 🔧 开发者监控（DeveloperView）
+###  开发者监控（DeveloperView）
 
 - 实时 LLM 调用日志
 - 检索中间结果查看
 - 性能指标监控
 
-### 📋 暂存池（PendingPoolView）
+###  暂存池（PendingPoolView）
 
 人机协作审核流水线：
 - 待审核队列展示
