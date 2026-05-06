@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Logs
+*.log
+logs/
+backend/logs/
+
+# Database (vector db is generated)
+data/vectordb/
+data/raw/
+
+# Models (large, download via scripts)
+models/bge-m3/
+models/bge-reranker-v2-m3/
+
+# Offline pip wheels (too large for git)
+wheels/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Frontend build (regenerate with npm run build)
+frontend/dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment (contains API keys/paths)
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+测试/
+*test*.py
+*debug*.html
+
+# Project history (not needed in repo)
+项目历史文档/
+
+# Windows/MS Office temp files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Local scripts and logs
+connection_check.log
+*修复报告*.md
+*问题修复*.md
+*问题诊断*.bat
+*说明.bat
+禁用联想电脑管家.bat
+诊断启动问题.bat
+重启服务.bat
+install.bat.bak
+start.bat.bak
+
+# Test and debug files
+frontend/test.html
+frontend/test-charts.html
+frontend/src/views/DeveloperView_test.html
+frontend/src/views/DeveloperView_test.vue
